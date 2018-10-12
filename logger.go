@@ -3,10 +3,11 @@ package gormrus
 import (
 	"database/sql/driver"
 	"fmt"
-	"github.com/Sirupsen/logrus"
 	"reflect"
 	"regexp"
 	"time"
+
+	"github.com/sirupsen/logrus"
 )
 
 var sqlRegexp = regexp.MustCompile(`(\$\d+)|\?`)
